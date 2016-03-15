@@ -10,45 +10,75 @@
         
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./styles/css/app.css" />
         
     </head>
-    <body ng-app="sandboxApp" style='margin:25px'>  
-        <h1>Tinkertron</h1>
+    <body ng-app="sandboxApp">  
         
-        <div class="row">
-            <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Information</div>
-                            <div class="panel-body">
-                                
-                                <div class="row" style='margin-left:25px'>
-                                    Node : <span class="label label-info"><script>document.write(process.versions.node)</script></span>
-                                </div>
-                                <div class="row" style='margin-left:25px'>
-                                    Chromium : <span class="label label-info"><script>document.write(process.versions.chrome)</script></span>
-                                </div>
-                                <div class="row" style='margin-left:25px'>
-                                    Electron : <span class="label label-info"><script>document.write(process.versions.electron)</script></span>
-                                </div>                            
-                            </div>
-                    </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand Navbar</a>
+                </div>
             </div>
+        </nav>
+
+        <div class="right">
+            <ul>
+                <li><a href="#"><i class="fa fa-bars" style="font-size:18pt"></i></a></li>
+                <li><a href="#"><i class="fa fa-filter"></i></a></li>
+                <li><a href="#"><i class="fa fa-table"></i></a></li>
+                <li><a href="#"><i class="fa fa-database"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="statusbar">
+            Statusbar example text...
         </div>
         
-        <div class="row">
-            <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Tinkertron package.json (Nodejs Native)</div>
-                            <div class="panel-body">
-                            <script type="text/javascript">
-                                var fs = require('fs');
-                                var file = fs.readFileSync('package.json');
-                                document.write(file);
-                            </script>                            
-                            </div>
-                    </div>
+        <div class="left">
+            <h1>Tinkertron</h1>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Information</div>
+                                <div class="panel-body">
+                                    
+                                    <div class="row" style='margin-left:25px'>
+                                        Node : <span class="label label-info"><script>document.write(process.versions.node)</script></span>
+                                    </div>
+                                    <div class="row" style='margin-left:25px'>
+                                        Chromium : <span class="label label-info"><script>document.write(process.versions.chrome)</script></span>
+                                    </div>
+                                    <div class="row" style='margin-left:25px'>
+                                        Electron : <span class="label label-info"><script>document.write(process.versions.electron)</script></span>
+                                    </div>                            
+                                </div>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Tinkertron package.json (Nodejs Native)</div>
+                                <div class="panel-body">
+                                <script type="text/javascript">
+                                    var fs = require('fs');
+                                    var file = fs.readFileSync('package.json');
+                                    document.write(file);
+                                </script>                            
+                                </div>
+                        </div>
+                </div>
             </div>
         </div>
-        
     </body>
 </html>

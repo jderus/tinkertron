@@ -1,15 +1,9 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
-var del = require('del');
-
-
 
 // plugins for sassing.
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var sassdoc = require('sassdoc');
-
-
 
 
 // Sassing WIP ----------------------------------------------------------------------------------------------------
