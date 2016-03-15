@@ -1,0 +1,72 @@
+/// This is an example of blue in color pallette
+$color1 : #00f;
+/// This is an example of red in color pallette
+$color2 : #f00;
+
+* {
+  box-sizing: border-box;
+}
+
+.right {
+  position: fixed; // keep fixed to window
+  padding: 10px;
+  top: 40px;
+  right: 0; // position to top left of window
+  height: 100%;
+  width: 50px; //set dimensions
+  background: #555555;
+  text-align: center;
+  transition: width ease .5s; // fluid transition when resizing
+  body.open-nav & {
+    width: 250px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 25px;
+    }
+  }
+  a {
+    color: shade(darkslategray, 50%);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color ease .35s, border-bottom-color ease .35s;
+    &:hover {
+      color: white;
+    }
+    &.open {
+      font-size: 1.75rem;
+      font-weight: 700;
+      border: 0;
+    }
+  }
+}
+
+.left {
+  position: relative;
+  margin-left: 25px; // push the right column past the left column, with some room as well.
+  margin-right: 75px;
+  transition: margin-right ease .5s;
+  body.open-nav & {
+    margin-left: 275px; // push the right column further when left is opened
+  }
+}
+
+.statusbar {
+    position:fixed;
+    margin: 0;
+    padding: 15px;
+    height: 30px;
+    min-height: 30px;
+    background: #4e5d6c;
+    bottom:0px;
+    width: 100%;
+}
+
+.statusbar > li > a, .statusbar {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 28px;
+}
