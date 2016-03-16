@@ -5,6 +5,8 @@ var plugins = require('gulp-load-plugins')();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
+var del = require('del');
+
 
 // Sassing WIP ----------------------------------------------------------------------------------------------------
 var sassinput = './src/styles/*.scss';
@@ -24,3 +26,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(sassoutput));
 });
 
+gulp.task("clean", function (cb) {
+    console.log("// Gulp: Del Sassed Files");
+    return del(["src/styles/css/**"]);
+});
