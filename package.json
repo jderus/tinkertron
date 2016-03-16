@@ -4,7 +4,7 @@
   "description": "A tinkering in Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ./src/main.js"
+    "start": "npm install && gulp sass && electron ./src/main.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   "author": "jderus",
   "devDependencies": {
     "electron-prebuilt": "^0.36.0",
+    
+    "del": "^2.2.0",
     
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",

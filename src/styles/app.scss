@@ -49,9 +49,9 @@ $color2 : #f00;
   margin-left: 25px; // push the right column past the left column, with some room as well.
   margin-right: 75px;
   transition: margin-right ease .5s;
-  body.open-nav & {
-    margin-left: 275px; // push the right column further when left is opened
-  }
+//   body.open-nav & {
+//     margin-left: 275px; // push the right column further when left is opened
+//   }
 }
 
 .statusbar {
