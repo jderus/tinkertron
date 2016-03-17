@@ -1,7 +1,16 @@
-/// This is an example of blue in color pallette
-$color1 : #00f;
-/// This is an example of red in color pallette
-$color2 : #f00;
+$gray-light: #4e5d6c;
+$gray-lighter: #ebebeb;
+$brand-primary: #df691a;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$body-bg: #2b3e50;
+$navbar-default-bg: #4e5d6c;
+
+
+$panel-bg: $gray-light;
+$panel-default-heading-bg: lighten($body-bg, 10%);
+$panel-bg: lighten($body-bg, 3%);
 
 * {
   box-sizing: border-box;
@@ -69,4 +78,17 @@ $color2 : #f00;
     padding-top:4px !important; 
     padding-bottom:0 !important;
     height: 28px;
+}
+
+.tilehead {
+    background-color: $panel-default-heading-bg;
+    border-right-color: $brand-warning;
+    border-right-width: 3px;
+    border-right-style: solid;
+    height: 100px;
+}
+
+.tilecontent {
+    background-color: $panel-bg;
+    height: 100px;
 }
