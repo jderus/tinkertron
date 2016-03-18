@@ -1,0 +1,94 @@
+$gray-light: #4e5d6c;
+$gray-lighter: #ebebeb;
+$brand-primary: #df691a;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$body-bg: #2b3e50;
+$navbar-default-bg: #4e5d6c;
+
+
+$panel-bg: $gray-light;
+$panel-default-heading-bg: lighten($body-bg, 10%);
+$panel-bg: lighten($body-bg, 3%);
+
+* {
+  box-sizing: border-box;
+}
+
+.right {
+  position: fixed; // keep fixed to window
+  padding: 10px;
+  top: 40px;
+  right: 0; // position to top left of window
+  height: 100%;
+  width: 50px; //set dimensions
+  background: #555555;
+  text-align: center;
+  transition: width ease .5s; // fluid transition when resizing
+  body.open-nav & {
+    width: 250px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-bottom: 25px;
+    }
+  }
+  a {
+    color: shade(darkslategray, 50%);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color ease .35s, border-bottom-color ease .35s;
+    &:hover {
+      color: white;
+    }
+    &.open {
+      font-size: 1.75rem;
+      font-weight: 700;
+      border: 0;
+    }
+  }
+}
+
+.left {
+  position: relative;
+  margin-left: 25px; // push the right column past the left column, with some room as well.
+  margin-right: 75px;
+  transition: margin-right ease .5s;
+//   body.open-nav & {
+//     margin-left: 275px; // push the right column further when left is opened
+//   }
+}
+
+.statusbar {
+    position:fixed;
+    margin: 0;
+    padding: 15px;
+    height: 30px;
+    min-height: 30px;
+    background: #4e5d6c;
+    bottom:0px;
+    width: 100%;
+}
+
+.statusbar > li > a, .statusbar {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 28px;
+}
+
+.tilehead {
+    background-color: $panel-default-heading-bg;
+    border-right-color: $brand-warning;
+    border-right-width: 3px;
+    border-right-style: solid;
+    height: 100px;
+}
+
+.tilecontent {
+    background-color: $panel-bg;
+    height: 100px;
+}
