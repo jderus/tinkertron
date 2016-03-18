@@ -92,3 +92,13 @@ $panel-bg: lighten($body-bg, 3%);
     background-color: $panel-bg;
     height: 100px;
 }
+
+.border:after {
+    content:"";
+    background: $brand-primary;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    height: 50%;
+    width: 2px;
+}
