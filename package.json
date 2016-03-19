@@ -18,10 +18,9 @@
   ],
   "author": "jderus",
   "devDependencies": {
-    "electron-prebuilt": "^0.36.0",
-    
     "del": "^2.2.0",
-    
+    "electron-prebuilt": "^0.36.0",
+    "electron-reload": "^0.2.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "0.1.7",

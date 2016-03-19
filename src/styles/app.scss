@@ -1,5 +1,6 @@
 $gray-light: #4e5d6c;
 $gray-lighter: #ebebeb;
+$brand-info: #5bc0de;
 $brand-primary: #df691a;
 $brand-success: #5cb85c;
 $brand-warning: #f0ad4e;
@@ -16,7 +17,7 @@ $panel-bg: lighten($body-bg, 3%);
   box-sizing: border-box;
 }
 
-body { padding-top: 40px; } //Navbar padding
+body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 
 .right {
   position: fixed; // keep fixed to window
@@ -72,6 +73,7 @@ body { padding-top: 40px; } //Navbar padding
     height: 30px;
     min-height: 30px;
     background: #4e5d6c;
+    border-top: 1px solid $brand-primary;
     bottom:0px;
     width: 100%;
     z-index: 2;
@@ -105,3 +107,12 @@ body { padding-top: 40px; } //Navbar padding
     height: 50%;
     width: 2px;
 }
+
+
+
+pre {outline: none; border: none; padding: 5px; background: #4e5d6c; color:#ffffff; margin: 5px; }
+.syntaxstring { color: $brand-success; }
+.syntaxnumber { color: $brand-primary; }
+.syntaxboolean { color: $brand-warning; }
+.syntaxnull { color: $brand-danger; }
+.syntaxkey { color: $brand-info; }
