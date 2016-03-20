@@ -1,0 +1,7 @@
+{
+  "name": "sandbox",
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "^1.2.5"
+  }
+}

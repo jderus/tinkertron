@@ -4,7 +4,7 @@
     angular.module('ttApp')
            .controller('toyController', toyController);
 
-    toyController.$inject = ['$scope', '$location', '$filter', $sce, 'fiddleService'];
+    toyController.$inject = ['$scope', '$location', '$filter', '$sce', 'fiddleService'];
 
     function toyController($scope, $location, $filter, $sce, fiddleService) {
         /* jshint validthis:true */
