@@ -109,10 +109,51 @@ body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 }
 
 
-
+// ------------------------------------------------------------------------------------------------------
+/// Syntax Highlighting
 pre {outline: none; border: none; padding: 5px; background: #4e5d6c; color:#ffffff; margin: 5px; }
 .syntaxstring { color: $brand-success; }
 .syntaxnumber { color: $brand-primary; }
 .syntaxboolean { color: $brand-warning; }
 .syntaxnull { color: $brand-danger; }
 .syntaxkey { color: $brand-info; }
+
+
+// ------------------------------------------------------------------------------------------------------
+/// Navbar 
+// TODO: Find a better way to specify all of this.
+nav {
+  margin-bottom: 0px !important;
+  font-size: 18px;
+  min-height:30px;
+}
+
+nav a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  font-size: 18px;
+  height: 20px;
+  min-height:20px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  height: 20px;
+  min-height:20px;
+}
+
+// ------------------------------------------------------------------------------------------------------
+/// Navbar Shrink
+nav.navbar.shrink {
+  min-height: 24px !important;
+}
+
+nav.shrink a {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  font-size: 12px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 12px;
+}

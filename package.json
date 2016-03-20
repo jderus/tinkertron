@@ -3,23 +3,33 @@
   "version": "1.0.0",
   "description": "A tinkering in Electron",
   "main": "main.js",
+  
   "scripts": {
-    "start": "npm install && gulp sass && electron ./src/main.js"
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "gulp sass && electron ./src/main.js"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jderus/tinkertron"
   },
+  
   "keywords": [
     "Electron",
     "quick",
-    "start",
-    "tutorial"
+    "start"
   ],
+  
   "author": "jderus",
+  
+  "dependencies": {
+    "bower": "^1.7.7"
+  },
+    
   "devDependencies": {
     "del": "^2.2.0",
-    "electron-prebuilt": "^0.36.0",
+    "electron-prebuilt": "^0.37.2",
     "electron-reload": "^0.2.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
