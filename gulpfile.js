@@ -26,6 +26,12 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(sassoutput));
 });
 
+//Watch task
+gulp.task('sasswatch',function() {
+    gulp.watch(sassinput,['sass']);
+});
+
+// Clean ----------------------------------------------------------------------------------------------------------
 gulp.task("clean", function (cb) {
     console.log("// Gulp: Del Sassed Files");
     return del(["src/styles/css/**"]);
