@@ -1,13 +1,4 @@
-$gray-light: #4e5d6c;
-$gray-lighter: #ebebeb;
-$brand-info: #5bc0de;
-$brand-primary: #df691a;
-$brand-success: #5cb85c;
-$brand-warning: #f0ad4e;
-$brand-danger: #d9534f;
-$body-bg: #2b3e50;
-$navbar-default-bg: #4e5d6c;
-
+@import 'colors';
 
 $panel-bg: $gray-light;
 $panel-default-heading-bg: lighten($body-bg, 10%);
@@ -66,6 +57,8 @@ body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 //   }
 }
 
+// ------------------------------------------------------------------------------------------------------
+/// Statusbar
 .statusbar {
     position:fixed;
     margin: 0;
