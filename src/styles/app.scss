@@ -1,5 +1,6 @@
 @import 'colors';
 
+
 $panel-bg: $gray-light;
 $panel-default-heading-bg: lighten($body-bg, 10%);
 $panel-bg: lighten($body-bg, 3%);
@@ -57,26 +58,8 @@ body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 //   }
 }
 
-// ------------------------------------------------------------------------------------------------------
-/// Statusbar
-.statusbar {
-    position:fixed;
-    margin: 0;
-    padding: 15px;
-    height: 30px;
-    min-height: 30px;
-    background: #4e5d6c;
-    border-top: 1px solid $brand-primary;
-    bottom:0px;
-    width: 100%;
-    z-index: 2;
-}
-
-.statusbar > li > a, .statusbar {
-    padding-top:4px !important; 
-    padding-bottom:0 !important;
-    height: 28px;
-}
+/* Statusbar Example Comment before import */
+@import 'statusbar';
 
 .tilehead {
     background-color: $panel-default-heading-bg;

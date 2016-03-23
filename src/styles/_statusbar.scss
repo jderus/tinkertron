@@ -1,0 +1,21 @@
+// ------------------------------------------------------------------------------------------------------
+/// Statusbar
+/* Example Comment Include with SASSpilation */
+.statusbar {
+    position:fixed;
+    margin: 0;
+    padding: 15px;
+    height: 30px;
+    min-height: 30px;
+    background: #4e5d6c;
+    border-top: 1px solid $brand-primary;
+    bottom:0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.statusbar > li > a, .statusbar {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 28px;
+}
