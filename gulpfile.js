@@ -4,6 +4,7 @@ var plugins = require('gulp-load-plugins')();
 // plugins for sassing.
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var sassdoc = require('sassdoc');
 
 var del = require('del');
 
@@ -26,10 +27,22 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(sassoutput));
 });
 
-//Watch task
+// Sassing Watch task
 gulp.task('sasswatch',function() {
     gulp.watch(sassinput,['sass']);
 });
+
+// Sassdocsing
+var sassdocOptions = { dest: './docs/sassdoc' };
+
+gulp.task('sassdoc', function () {
+  return gulp
+    .src(sassinput)
+    .pipe(sassdoc(sassdocOptions))
+    .resume();
+});
+// END Sassing WIP ------------------------------------------------------------------------------------------------
+
 
 // Clean ----------------------------------------------------------------------------------------------------------
 gulp.task("clean", function (cb) {

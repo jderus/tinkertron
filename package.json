@@ -1,6 +1,6 @@
 {
   "name": "tinkertron",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A tinkering in Electron",
   "main": "main.js",
   
@@ -37,6 +37,8 @@
     "gulp-load-plugins": "^1.2.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    
+     "sassdoc": "^2.1.20"
   }
 }
