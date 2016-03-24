@@ -33,7 +33,7 @@ gulp.task('sasswatch',function() {
 });
 
 // Sassdocsing
-var sassdocOptions = { dest: './docs/sassdoc' };
+var sassdocOptions = { dest: './docs/sassdoc'};
 
 gulp.task('sassdoc', function () {
   return gulp
