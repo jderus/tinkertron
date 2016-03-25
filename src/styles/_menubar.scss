@@ -1,0 +1,20 @@
+.burger {
+    position: fixed; // keep fixed to window
+    padding: 10px 10px 10px 10px;
+    top: 0px;
+    right: 10px; // position to top left of window
+    height: 50px;
+    width: 40px; //set dimensions
+    background: $brand-primary;
+    color: white;
+    font-size: 16pt;
+    text-align: center;
+    transition: width ease .5s; // fluid transition when resizing
+    z-index: 1030 !important; //bootswatch navbar appears to be 1030ish
+    a {
+        color: white;
+        &:hover {
+            color: $brand-warning;
+        }
+    }
+}
