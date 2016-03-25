@@ -13,14 +13,15 @@ body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 
 .right {
   position: fixed; // keep fixed to window
-  padding: 10px;
-  top: 40px;
+  padding: 30px 10px 10px 10px;
+  top: 24px;
   right: 0; // position to top left of window
   height: 100%;
-  width: 50px; //set dimensions
+  width: 60px; //set dimensions
   background: #555555;
   text-align: center;
   transition: width ease .5s; // fluid transition when resizing
+  border-left: 1px solid black;
   body.open-nav & {
     width: 250px;
   }
@@ -131,3 +132,5 @@ nav.shrink a {
 nav.shrink .navbar-brand {
   font-size: 12px;
 }
+
+@import 'menubar';
