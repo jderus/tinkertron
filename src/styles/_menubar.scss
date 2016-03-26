@@ -77,3 +77,20 @@
     border: 0;
     }
 }
+
+.tt-menubar-menu .info a {
+    // color: shade(darkslategray, 50%);
+    // border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: color ease .35s, border-bottom-color ease .35s;
+    color: $brand-info;
+    font-size: 2.25rem;
+    &:hover {
+    color: white;
+    }
+    &.open {
+    font-size: 1.75rem;
+    font-weight: 700;
+    border: 0;
+    }
+}
