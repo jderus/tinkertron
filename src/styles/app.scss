@@ -11,44 +11,6 @@ $panel-bg: lighten($body-bg, 3%);
 
 body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 
-.right {
-  position: fixed; // keep fixed to window
-  padding: 30px 10px 10px 10px;
-  top: 24px;
-  right: 0; // position to top left of window
-  height: 100%;
-  width: 60px; //set dimensions
-  background: #555555;
-  text-align: center;
-  transition: width ease .5s; // fluid transition when resizing
-  border-left: 1px solid black;
-  body.open-nav & {
-    width: 250px;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      margin-bottom: 25px;
-    }
-  }
-  a {
-    color: shade(darkslategray, 50%);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color ease .35s, border-bottom-color ease .35s;
-    &:hover {
-      color: white;
-    }
-    &.open {
-      font-size: 1.75rem;
-      font-weight: 700;
-      border: 0;
-    }
-  }
-}
-
 .left {
   position: relative;
   margin-left: 25px; // push the right column past the left column, with some room as well.
@@ -58,9 +20,6 @@ body { padding-top: 40px; padding-bottom:50px;} //Navbar padding
 //     margin-left: 275px; // push the right column further when left is opened
 //   }
 }
-
-/* Statusbar Example Comment before import */
-@import 'statusbar';
 
 .tilehead {
     background-color: $panel-default-heading-bg;
@@ -134,3 +93,6 @@ nav.shrink .navbar-brand {
 }
 
 @import 'menubar';
+
+/* Statusbar Example Comment before import */
+@import 'statusbar';
