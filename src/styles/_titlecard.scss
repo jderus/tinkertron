@@ -1,0 +1,37 @@
+// ------------------------------------------------------------------------------------------------------
+/// Titlecard
+/* Example Comment Include with SASSpilation */
+.tt-titlecard {
+    background: $gray-light;
+    -webkit-box-shadow: 1px 1px 2px 0 $panel-default-bg;
+    -moz-box-shadow: 1px 1px 2px 0 $panel-default-bg;
+    -o-box-shadow: 1px 1px 2px 0 $panel-default-bg;
+    -ms-box-shadow: 1px 1px 2px 0 $panel-default-bg;
+    box-shadow: 1px 1px 2px 0 $panel-default-bg;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.tt-titlecard-info i {
+    font-size: 28pt;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 12px;
+    width: 40px;
+    text-align: center;    
+}
+
+.tt-titlecard-info .headline {
+    display: block;
+    font-size: 22pt;
+    font-weight: 500;
+}
+
+.tt-titlecard-info .subtext {
+    font-size: 12pt;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: -5px;
+    display: block;
+}
