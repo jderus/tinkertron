@@ -8,6 +8,10 @@
     function ttTitlecardDir() {
         var directive = {
             link: link,
+            scope: {
+                title: '@',
+                subtext: '@'
+            },
             templateUrl: 'dirtemplates/titlecard.template.html',
             restrict: 'E'
         };

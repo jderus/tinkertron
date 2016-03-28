@@ -23,7 +23,8 @@
         activate();
 
         function activate() {
-            vm.title = "Sandbox some text:";
+            vm.title = "Sandbox";
+            vm.text = "some text";
             fiddleService.getData().$promise.then(
                 function (value) { 
                     vm.fakedata = value;
