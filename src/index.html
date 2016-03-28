@@ -28,9 +28,9 @@
         
         <tt-menubar></tt-menubar> 
         
-        <div class="left">
+        <div class="left" ng-controller="toyController as toy">
             <div class="row" style="margin-left:-40px;"> 
-                <tt-titlecard title="something"> 
+                <tt-titlecard title="{{toy.title}}" subtext="Getr done"> 
                 </tt-titlecard>
             </div>
 
@@ -40,7 +40,7 @@
                  <a href="#" class="btn btn-default"><i class="fa fa-table"></i></a>
                 </div>
             </div>
-            <div class="row" ng-controller="toyController as toy">
+            <div class="row">
                 <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
