@@ -8,6 +8,8 @@ var sassdoc = require('sassdoc');
 
 var del = require('del');
 
+var Server = require('karma').Server;
+
 
 // Sassing WIP ----------------------------------------------------------------------------------------------------
 var sassinput = './src/styles/*.scss';
@@ -48,4 +50,15 @@ gulp.task('sassdoc', function () {
 gulp.task("clean", function (cb) {
     console.log("// Gulp: Del Sassed Files");
     return del(["src/styles/css/**"]);
+});
+
+// Testing ----------------------------------------------------------------------------------------------------
+gulp.task('test', function (done) {
+    new Server({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true //set to false to debug tests
+    }, function (exitCode) {
+        done();
+    }).start();
+    
 });

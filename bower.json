@@ -2,6 +2,11 @@
   "name": "sandbox",
   "private": true,
   "dependencies": {
-    "angular-bootstrap": "^1.2.5"
+    "angular-bootstrap": "^1.2.5",
+    
+    "angular": "1.4.5",
+    "angular-route": "1.4.5",
+    "angular-resource": "1.4.5",
+    "angular-mocks": "1.4.5"
   }
 }
