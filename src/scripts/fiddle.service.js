@@ -25,7 +25,7 @@
             var deferred = $q.defer();
             
             var fs = require('fs');
-            var file = fs.readFile('./package.json', 'utf8', (err, data) => {
+            var file = fs.readFile('./package.json', 'utf8', function(err, data) {
                 if (err) { throw err;}
                 console.log('pack');
                 console.log(data);
