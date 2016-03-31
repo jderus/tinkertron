@@ -24,7 +24,7 @@ module.exports = function (config) {
             // source files, to generate coverage for 
             // do not include tests or libraries 
             // (these files will be instrumented by Istanbul) 
-            'src/wwwroot/*.js': ['coverage']
+            'src/scripts/*.js': ['coverage']
         },
 
         // Optional Configuration for HTML Reporter
