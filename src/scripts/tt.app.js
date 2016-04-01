@@ -5,7 +5,7 @@
         .config(function ($routeProvider, $locationProvider) {
 
             $routeProvider.when('/', {
-                templateUrl: 'index.html'
+                templateUrl: 'mainview.html'
             });
 
             $routeProvider.otherwise({
