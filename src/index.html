@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Tinkertron</title>
         
+        <!-- TODO: Fix this. -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js"></script>
@@ -21,90 +22,27 @@
         
         <nav class="navbar navbar-default navbar-fixed-top" ng-class="{'shrink':scrollDown}" role="navigation" shrink>
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Tinkertron</a>
+                <a class="navbar-brand"> 
+                    <i class="fa fa-wrench"></i>&nbsp;&nbsp;
+                    Tinkertron 
+                 </a>
                 </div>
             </div>
         </nav>
         
         <tt-menubar></tt-menubar> 
         
-        <div class="left" ng-controller="toyController as toy">
-            <div class="row" style="margin-left:-40px;"> 
-                <tt-titlecard title="{{toy.title}}" subtext="Getr done"> 
-                </tt-titlecard>
-            </div>
-
-            <!-- summary card proto -->
-            <div class="row">
-                <div class="col-lg-1 tilehead">
-                L0
-                </div>
-                <div class="col-lg-11 tilecontent">
-                    <div class="row">
-                        <div class="col-lg-6" >
-                        Summary Cards Here
-                        </div>
-                        <div class="col-lg-6 border">
-                        Stuff
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- check card proto -->
-            <div class="row">
-                <div class="col-lg-11">
-                    <div>beep</div>
-                    <div>boop</div>
-                </div>
-                <div class="col-lg-1">
-                    icon
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-2 pull-right" style="text-align:right;">
-                 <a href="#" class="btn btn-default disabled"><i class="fa fa-bar-chart"></i></a>
-                 <a href="#" class="btn btn-default"><i class="fa fa-table"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Tinkertron package.json file (Nodejs Native via Ng Service)
-                            </div>
-                            <div class="panel-body">
-                                <pre>
-                                    <div ng-bind-html="toy.packdata">/<div>        
-                                </pre>                     
-                            </div>
-                            <div class="panel-footer">
-                                <div class="col-lg-2 pull-right" style="text-align:right;">
-                                    <a href="#" class="btn btn-default disabled"><i class="fa fa-bar-chart"></i></a>
-                                    <a href="#" class="btn btn-default"><i class="fa fa-table"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                </div>                
-            </div>
-                              
+        <div class="container-fluid left">
+            <div ng-view></div>
         </div>
         
-        <div class="statusbar">
-            <div class="row">
-                <div class="col-lg-5">
-                    Node : <span class="label label-info"><script>document.write(process.versions.node)</script></span> &nbsp;&nbsp;&nbsp;&nbsp;
-                    Chromium : <span class="label label-info"><script>document.write(process.versions.chrome)</script></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                    Electron : <span class="label label-info"><script>document.write(process.versions.electron)</script></span>
-                </div>
-            </div>
-        </div>
+        <tt-statusbar></tt-statusbar>
         
         <script type="text/javascript" src="./scripts/tt.app.js"></script>
         <script type="text/javascript" src="./scripts/shrink.directive.js"></script>
         <script type="text/javascript" src="./scripts/menubar.directive.js"></script>
         <script type="text/javascript" src="./scripts/titlecard.directive.js"></script>
+        <script type="text/javascript" src="./scripts/statusbar.directive.js"></script>
         <script type="text/javascript" src="./scripts/toy.controller.js"></script>
         <script type="text/javascript" src="./scripts/fiddle.service.js"></script>        
     </body>
