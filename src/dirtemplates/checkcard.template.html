@@ -1,10 +1,18 @@
 <!-- check card proto -->
-<div class="row tt-checkcard">
-    <div class="col-lg-11">
-        <div>{{name}}</div>
-        <div>{{text}}</div>
-    </div>
-    <div class="col-lg-1">
-        {{icon}}
+<div class="container-fluid">
+    <div class="row equal tt-checkcard">
+        <div class="col-md-11">
+            <div id="stuff">
+                <h3> {{name}}</h3>
+                <p class="text">
+                    {{text}}
+                </p>
+            </div>
+        </div>
+        <div class="col-md-1 tt-checkcard-status">
+            <div class="otherstuff">
+            <i class="{{icon}}" style="font-size:34pt"></i>
+            </div>
+        </div>
     </div>
 </div>
