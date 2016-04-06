@@ -7,6 +7,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sassdoc = require('sassdoc');
 
 var del = require('del');
+var jshint = require('gulp-jshint');
 
 var Server = require('karma').Server;
 
@@ -61,4 +62,14 @@ gulp.task('test', function (done) {
         done();
     }).start();
     
+});
+
+// Linting -------------------------------------------------------------------------------------------------------
+gulp.task('jshint', function () {
+    return gulp.src("src/scripts/*.js")
+      .pipe(jshint())
+      .pipe(jshint.reporter('gulp-jshint-html-reporter', {
+          filename: __dirname + '/reports/jshint/jshint-output.html',
+          createMissingFolders: true
+      }));
 });
